@@ -8,7 +8,7 @@ import { Server } from './presentation/server';
 
 async function main() {
   const server = new Server({
-    serverPort: envs.SERVER_PORT,
+    serverPort: envs.PORT!,
     publicPath: envs.PUBLIC_PATH,
     routes: AppRoutes.routes,
   });
